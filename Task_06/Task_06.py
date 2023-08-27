@@ -1,11 +1,6 @@
 n = int(input())
-reshka = True
-i = 1
-while reshka:
-    if n > 0:
-        n -= i
-    else:
-        reshka = False
-    i += 1
-print(i)
-        
+if n > 1:
+    n = n // 2
+    print(n)
+else:
+    print("No money")
