@@ -8,8 +8,8 @@
 
 # 44 >22; 56 > 23
 
-sum1 = abs(int(input('Summ: ')))
-mult = abs(int(input('Multipller: ')))
+sum1 = int(input('Summ: '))
+mult = int(input('Multipller: '))
 a = int(sum1 - (sum1 ** 2 - 4 * mult) ** 0.5) // 2
 b = int(sum1 + (sum1 ** 2 - 4 * mult) ** 0.5) // 2 
 print(a, b)
