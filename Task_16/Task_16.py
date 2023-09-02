@@ -5,9 +5,10 @@
 # 5 [1 2 3 4 5]
 # 3 -> 1
 
-list_1 = [1, 2, 3, 4, 5]
+list_1 = [1, 2, 3, 4, 5,]
 k = 3
-for i in range(0, 5):
-    i += 1
+count = 0
+for i in list_1:
     if i == k:
-        print(i)
+        count += 1
+print(count)
