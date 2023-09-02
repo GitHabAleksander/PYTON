@@ -5,3 +5,12 @@
 # Последняя строка содержит число X
 # 5 [1 2 3 4 5]
 # 6 -> 5
+list_1 = [1, 2, 3, 4, 5, 6, 7]
+k = 6
+max1 = 0
+for i in list_1:
+    if max1 < k:
+        max1 = i
+    else:
+        max1 = k
+print(max1)
