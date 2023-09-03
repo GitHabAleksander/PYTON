@@ -5,12 +5,14 @@
 # Последняя строка содержит число X
 # 5 [1 2 3 4 5]
 # 6 -> 5
-list_1 = [1, 2, 3, 4, 5, 6, 7]
-k = 6
-max1 = 0
-for i in list_1:
-    if max1 < k:
-        max1 = i
-    else:
-        max1 = k
-print(max1)
+list_1 = [2, 4, 1, 6, 8, 2, 9, 3, 2, 5]
+k = 10
+# max1 = 0
+# for i in list_1:
+#     if max1 < k:
+#         max1 = i
+#     else:
+#         max1 = k
+# print(max1)
+closest_element = min(list_1, key=lambda x: abs(x - k))
+print(closest_element)
