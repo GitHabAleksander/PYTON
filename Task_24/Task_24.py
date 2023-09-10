@@ -16,3 +16,12 @@
 # грядки.
 # 4 -> 1 2 3 4
 # 9
+
+berryInKusts = [22, 33, 24, 12, 19, 4, 35, 2, 7, 34]
+maxBerry = 0
+midBerry = 0
+for i in range(2, len(berryInKusts), 1):
+    midBerry = berryInKusts[i] + berryInKusts[i - 1] + berryInKusts[i - 2]
+    if midBerry > maxBerry:
+        maxBerry = midBerry
+print(maxBerry)
