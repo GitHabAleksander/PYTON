@@ -7,3 +7,11 @@
 # 11 6
 # 2 4 6 8 10 12 10 8 6 4 2 3 6 9 12 15 18
 # 6 12
+listOne = {1, 5, 2, 7, 8, 5, 8, 5, 0}
+listTwo = {9, 6, 7, 5, 4, 0, 2, 4, 8, 1}
+
+listOneTwo = listOne.intersection(listTwo)
+for i in listOneTwo:
+    if i > i - 1:
+        max1 = i
+    print(listOneTwo)
