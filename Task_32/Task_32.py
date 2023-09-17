@@ -3,3 +3,14 @@
 # не меньше заданного минимума и не больше заданного максимума)
 # Ввод:  [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
 # Вывод: [1, 9, 13, 14, 19]
+
+# from random import randint
+# list_gen = list(randint(-10, 10) for i in range(20))
+# print(list_gen)
+
+max1 = 10
+min1 = 6
+list_gen = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+for i in range(len(list_gen)):
+    if min1 <= list_gen[i] <= max1:
+        print(i, end=' ')
